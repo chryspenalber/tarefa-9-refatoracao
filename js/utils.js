@@ -10,7 +10,7 @@ export function criarElementoCliente(cliente, onExcluir) {
   `;
 
   const btnExcluir = div.querySelector(".btnExcluir");
-  btnExcluir.addEventListener("click", () => onExcluir(cliente._id));
+  btnExcluir.addEventListener("click", () => onExcluir(cliente.id));
 
   return div;
 }

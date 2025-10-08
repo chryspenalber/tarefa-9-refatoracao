@@ -7,7 +7,7 @@ const btnCadastrar = document.getElementById("btnCadastrar");
 const listaClientes = document.getElementById("listaClientes");
 
 // Instanciando o serviço
-const apiURL = "https://crudcrud.com/api/18159685d6a64d6795a64a6ef818fd57/clientes";
+const apiURL = "https://68e6b39110e3f82fbf3cf477.mockapi.io/clientes";
 const clienteService = new ClienteService(apiURL);
 
 // Função principal de atualização da lista
