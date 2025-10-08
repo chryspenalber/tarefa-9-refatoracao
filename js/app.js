@@ -1,54 +1,54 @@
-import { Cliente, ClienteService } from "./classes.js";
-import { criarElementoCliente, validarCampos } from "./utils.js";
+import { Cliente, ClienteService } from "./classes.js"
+import { criarElementoCliente, validarCampos } from "./utils.js"
 
-const inputNome = document.getElementById("nome");
-const inputEmail = document.getElementById("email");
-const btnCadastrar = document.getElementById("btnCadastrar");
-const listaClientes = document.getElementById("listaClientes");
+const inputNome = document.getElementById("nome")
+const inputEmail = document.getElementById("email")
+const btnCadastrar = document.getElementById("btnCadastrar")
+const listaClientes = document.getElementById("listaClientes")
 
 // Instanciando o serviço
-const apiURL = "https://68e6b39110e3f82fbf3cf477.mockapi.io/clientes";
-const clienteService = new ClienteService(apiURL);
+const apiURL = "https://68e6b39110e3f82fbf3cf477.mockapi.io/clientes"
+const clienteService = new ClienteService(apiURL)
 
 // Função principal de atualização da lista
 async function atualizarLista() {
-  listaClientes.innerHTML = "";
-  const clientes = await clienteService.listar();
+  listaClientes.innerHTML = ""
+  const clientes = await clienteService.listar()
 
   // Uso de map() — Programação Funcional
   clientes.map(cliente => {
-    const elemento = criarElementoCliente(cliente, excluirCliente);
-    listaClientes.appendChild(elemento);
-  });
+    const elemento = criarElementoCliente(cliente, excluirCliente)
+    listaClientes.appendChild(elemento)
+  })
 }
 
 // Função para cadastrar
 async function cadastrarCliente() {
-  const nome = inputNome.value;
-  const email = inputEmail.value;
+  const nome = inputNome.value
+  const email = inputEmail.value
 
   if (!validarCampos(nome, email)) {
-    alert("Preencha todos os campos!");
-    return;
+    alert("Preencha todos os campos!")
+    return
   }
 
-  const novoCliente = new Cliente(nome, email);
-  await clienteService.cadastrar(novoCliente);
+  const novoCliente = new Cliente(nome, email)
+  await clienteService.cadastrar(novoCliente)
 
-  inputNome.value = "";
-  inputEmail.value = "";
+  inputNome.value = ""
+  inputEmail.value = ""
 
-  atualizarLista();
+  atualizarLista()
 }
 
 // Função para excluir
 async function excluirCliente(id) {
-  await clienteService.excluir(id);
-  atualizarLista();
+  await clienteService.excluir(id)
+  atualizarLista()
 }
 
 // Eventos
-btnCadastrar.addEventListener("click", cadastrarCliente);
+btnCadastrar.addEventListener("click", cadastrarCliente)
 
 // Carrega lista ao abrir
-atualizarLista();
+atualizarLista()
