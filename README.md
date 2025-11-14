@@ -1,3 +1,8 @@
+[Versão em Português](#portugues) | [English Version](#english)
+
+---
+<a id="portugues"></a>
+
 # 👩‍💼 Cadastro de Clientes (Refatoração) | Desenvolvido por Chrys Penalber
 
 Este projeto é uma tarefa prática do curso de **Engenheiro Front-End da EBAC**.
@@ -71,6 +76,87 @@ Técnicas aplicadas:
 ---
 
 ## 👩‍💻 Autora
+
+* GitHub — [@chryspenalber](https://github.com/chryspenalber)
+* LinkedIn — [Chrystiana Penalber](https://www.linkedin.com/in/chrystiana-penalber/)
+
+---
+<a id="english"></a>
+### English Version
+
+# 👩‍💼 Client Registration (Refactoring) | Developed by Chrys Penalber
+
+This project is a practical assignment from the **Front-End Engineer course at EBAC**.
+The goal was to develop a **modular CRUD application** (Create, Read, Delete) using **HTML, CSS, and JavaScript ES6+**, applying **Object-Oriented Programming (OOP)** and **separation of concerns** across multiple files.
+
+---
+
+## 🔗 Links
+
+* 🔴 [Live Site](https://chryspenalber.github.io/tarefa-9-refatoracao/)
+* 💻 [GitHub Repository](https://github.com/chryspenalber/tarefa-9-refatoracao)
+
+---
+
+## 📐 Overview
+
+The application allows users to **create, list, and delete clients** dynamically, consuming data from an **external REST API (MockAPI)**.
+It was designed to practice **code modularization**, **class usage**, **import/export modules**, and **asynchronous fetch requests with async/await**.
+
+### Features:
+
+* Client registration using name and email
+* Automatic listing of all registered records
+* Individual client deletion
+* Required field validation
+* Integration with MockAPI
+* Modular project structure split into three files (`app.js`, `classes.js`, `utils.js`)
+
+---
+
+## 🛠️ Technologies Used
+
+* **HTML5** — Semantic structure of the interface
+* **CSS3** — Modern and responsive layout with smooth borders and light shadows
+* **JavaScript (ES6 Modules)** — Code organization with `import` and `export`
+* **Object-Oriented Programming (OOP)** — Creation of `Cliente` and `ClienteService` classes
+* **Fetch API + async/await** — Asynchronous communication with the backend
+* **MockAPI** — REST database simulation
+
+---
+
+## 📲 Responsiveness
+
+The interface was designed to adapt well to different screen sizes, focusing on clarity and ease of use.
+Techniques applied:
+
+* Fluid and well-spaced layout
+* Buttons with `hover` and `active` states
+* Clear and accessible structure for smaller screens
+
+---
+
+## 💡 What Was Explored in This Project
+
+* **Code modularization** using `import/export`
+* **Creation and use of JavaScript classes**
+* **Pure and reusable functions** in `utils.js`
+* **Asynchronous HTTP requests** (`GET`, `POST`, `DELETE`)
+* **Functional programming** with `map()`
+* Best practices for clarity, reusability, and code organization
+
+---
+
+## 📚 Useful Resources
+
+* [MockAPI — REST API Tool](https://mockapi.io/)
+* [MDN Web Docs — JavaScript Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
+* [MDN Web Docs — JavaScript Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
+* [MDN Web Docs — Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
+
+---
+
+## 👩‍💻 Author
 
 * GitHub — [@chryspenalber](https://github.com/chryspenalber)
 * LinkedIn — [Chrystiana Penalber](https://www.linkedin.com/in/chrystiana-penalber/)
